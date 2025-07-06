@@ -4,11 +4,11 @@
    outline: 1px solid red; 
 } */
 
- .about-us-page{
+.about-us-page {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
- }
+}
 
 .page-about {
     background-color: #000;
@@ -19,7 +19,7 @@
     right: 0;
 }
 
-.container{
+.container {
     padding-left: 32px;
     padding-right: 32px;
     width: 100%;
@@ -35,7 +35,7 @@
     top: 0;
     justify-content: space-between;
     max-width: 1440px;
-    width:100%;
+    width: 100%;
     background-color: #000;
     z-index: 1000;
     display: none;
@@ -46,6 +46,7 @@
 .scroll-header-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 30px;
 }
 
@@ -57,7 +58,6 @@
 
 .scroll-header-links {
     display: flex;
-    gap: 20px;
     transition: all 0.3s ease;
 }
 
@@ -66,7 +66,7 @@
     color: #fff;
     padding: 10px 20px;
     font-size: 20px;
-    font-family:'Antonio';
+    font-family: 'Antonio';
     font-weight: bold;
     text-transform: uppercase;
     transition: color 0.3s ease;
@@ -87,13 +87,13 @@
     justify-content: space-between;
     padding-top: 56px;
     padding-bottom: 40px;
-    gap:20%;
+    gap: 20%;
 }
 
 @media(min-width: 1024px) {
 
-    .titleus{
-        width:100%;
+    .titleus {
+        width: 100%;
     }
 }
 
@@ -145,7 +145,7 @@
 ======================================== */
 .aboutus-container {
     padding-top: 80px;
-    padding-bottom:80px;
+    padding-bottom: 80px;
 }
 
 .aboutus-title {
@@ -260,14 +260,14 @@
     width: 100%;
 }
 
-.service-text{
+.service-text {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-height: 100%;
     max-width: 100%;
     width: 100%;
-    gap:30px;
+    gap: 30px;
 }
 
 .our-special-service .special-service .service-item .service-text h2 {
@@ -284,7 +284,8 @@
     flex-grow: 0;
     word-break: break-word;
 }
-.our-special-service .special-service .service-item .service-text .flex{
+
+.our-special-service .special-service .service-item .service-text .flex {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -330,7 +331,7 @@
 ======================================== */
 .the-process {
     padding-top: 80px;
-    padding-bottom:80px;
+    padding-bottom: 80px;
     color: hsl(347, 93%, 63%);
 }
 
@@ -379,12 +380,13 @@
     gap: 24px;
     align-items: center;
 }
-.icon-text img{
+
+.icon-text img {
     display: block;
     width: 44px;
     height: 44px;
     object-fit: contain;
-    padding-bottom:16px;
+    padding-bottom: 16px;
     transition: filter 0.3s, opacity 0.3s;
 }
 
@@ -486,8 +488,8 @@
     padding-top: 10px;
 }
 
-.maps{
-    padding-bottom:80px;
+.maps {
+    padding-bottom: 80px;
 }
 
 .maps a img {
@@ -534,13 +536,13 @@
    SECTION: SAMPAIKAN
 ======================================== */
 .sampaikan {
-    
+
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     padding-top: 260px;
-    padding-bottom:40px;
+    padding-bottom: 40px;
 }
 
 
@@ -552,11 +554,11 @@
     .about-us {
         flex-direction: column;
         gap: 20px;
-        padding-top : 56px;
-        padding-bottom:40px;
+        padding-top: 56px;
+        padding-bottom: 40px;
     }
 
-    .titleus{
+    .titleus {
         padding-bottom: 20px
     }
 
@@ -582,16 +584,16 @@
         flex-direction: flex;
     }
 
-    .service-text{
+    .service-text {
         flex-direction: column;
         gap: 24px;
     }
 
-    .service-text .flex{
-        padding-left:0px;
+    .service-text .flex {
+        padding-left: 0px;
     }
 
-    
+
 
     .our-special-service .special-service .service-item .service-text h2 {
         font-size: 44px;
@@ -605,12 +607,12 @@
         width: 100%;
     }
 
-    .service-item img{
-        width : 221px;
+    .service-item img {
+        width: 221px;
         height: 221px;
     }
 
-    
+
     .studio .title {
         font-size: 40px;
         max-width: 100%;
@@ -622,8 +624,8 @@
     }
 
     .sampaikan {
-        max-width:100%;
-        
+        max-width: 100%;
+
     }
 }
 
@@ -634,13 +636,24 @@
 ======================================== */
 @media (max-width: 650px) {
 
-    .container{
+    .container {
         padding-left: 16px;
-        padding-right:16px;
+        padding-right: 16px;
     }
 
-    .about-us{
-        padding-bottom:0px;
+    .about-us {
+        padding-bottom: 0px;
+    }
+
+    .scroll-header-nav {
+        padding: 10px 16px;
+    }
+
+    .scroll-header-nav img {
+        width: 120px;
+        height: auto;
+        padding: 0;
+        display: block;
     }
 
     /* Pop-up style for scroll-nav-links */
@@ -648,16 +661,14 @@
         display: none;
         flex-direction: column;
         align-items: flex-start;
-        width: 80vw;
-        max-width: 320px;
+        width: fit-content;
         background: #181818d4;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
         border-radius: 16px;
-        padding: 32px 24px 24px 24px;
+        padding: 24px;
         position: fixed;
         top: 60px;
-        /* atau sesuaikan tinggi scroll-header-nav */
-        right: 20px;
+        right: 16px;
         z-index: 2000;
         animation: popupFadeIn 0.25s;
     }
@@ -686,26 +697,26 @@
         font-size: 48px;
     }
 
-    .descriptionus{
-        padding-right:0px;
+    .descriptionus {
+        padding-right: 0px;
     }
 
-    .descriptionus .teks1{
+    .descriptionus .teks1 {
         font-size: 16px;
     }
 
-    .descriptionus .teks2{
+    .descriptionus .teks2 {
         font-size: 20px;
     }
 
-    .gif-container{
-        padding-top:56px;
-        padding-bottom:40px;
-        gap:16px;
+    .gif-container {
+        padding-top: 56px;
+        padding-bottom: 40px;
+        gap: 16px;
     }
 
-    .aboutus-container{
-        padding-top :40px; 
+    .aboutus-container {
+        padding-top: 40px;
         padding-bottom: 40px;
     }
 
@@ -716,39 +727,39 @@
 
     .our-special-service {
         padding-top: 40px;
-        padding-bottom:40px;
-        
+        padding-bottom: 40px;
+
     }
 
     .our-special-service .special-service {
         max-width: 100%;
         width: 100%;
-        gap:32px;
+        gap: 32px;
     }
 
-    .our-special-service .title  {
-        padding-bottom:32px;
+    .our-special-service .title {
+        padding-bottom: 32px;
     }
 
     .our-special-service .title h2 {
         font-size: 18px;
     }
 
-    .service-item{
+    .service-item {
 
-        flex-direction:column-reverse;
-        gap:24px;
+        flex-direction: column-reverse;
+        gap: 24px;
     }
 
-    .service-text .flex{
-        gap:40px;
+    .service-text .flex {
+        gap: 40px;
     }
 
     .our-special-service .special-service .service-item .service-text h2 {
-        font-size:32px;
+        font-size: 32px;
         max-width: 100%;
         width: 100%;
-        
+
     }
 
 
@@ -765,16 +776,16 @@
 
     .service-item img {
         width: auto;
-        height:auto;
+        height: auto;
     }
 
-    .the-process{
-        padding-top:40px;
-        padding-bottom:40px;
+    .the-process {
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
-    .the-process-title{
-        padding-bottom:24px;
+    .the-process-title {
+        padding-bottom: 24px;
     }
 
 
@@ -786,7 +797,7 @@
         display: block;
     }
 
-    
+
 
     .arrow-right {
         top: auto;
@@ -821,7 +832,7 @@
         justify-content: flex-start;
         gap: 24px;
         width: 100%;
-        padding-top:40px;
+        padding-top: 40px;
         padding-bottom: 24px;
     }
 
@@ -843,8 +854,8 @@
         padding-top: 32px;
     }
 
-    .maps{
-        padding-bottom:40px;
+    .maps {
+        padding-bottom: 40px;
     }
 
     .maps a img {
@@ -855,22 +866,23 @@
     }
 
 
-    .contact{
+    .contact {
         display: flex;
         flex-direction: column;
         gap: 24px;
         padding-top: 40px;
-        padding-bottom:0px;
+        padding-bottom: 0px;
     }
-    .contact .contact-text h2{
+
+    .contact .contact-text h2 {
         font-size: 18px;
     }
 
     .contact .contact-person {
-        gap:12px;
+        gap: 12px;
     }
 
-    .contact .contact-person p{
+    .contact .contact-person p {
         font-size: 18px;
     }
 
@@ -880,7 +892,7 @@
         width: 100%;
         left: 50%;
         right: 50%;
-        padding-top:260px;
+        padding-top: 260px;
     }
 }
 
@@ -892,54 +904,57 @@
 .animated-index-main,
 .animated-index-header,
 .animated-index-footer {
-  opacity: 1;
-  transform: none;
-  transition: none;
+    opacity: 1;
+    transform: none;
+    transition: none;
 }
 
 /* Desktop-only animation */
 @media screen and (min-width: 768px) {
-  .animated-index-bg,
-  .animated-index-main,
-  .animated-index-header,
-  .animated-index-footer {
-    opacity: 0;
-    transition: all 1s ease;
-  }
 
-  .animated-index-bg {
-    transform: scale(1.1); /* Zoomed out */
-  }
+    .animated-index-bg,
+    .animated-index-main,
+    .animated-index-header,
+    .animated-index-footer {
+        opacity: 0;
+        transition: all 1s ease;
+    }
 
-  .animated-index-bg.in {
-    opacity: 1;
-    transform: scale(1); /* Zoom to normal */
-  }
+    .animated-index-bg {
+        transform: scale(1.1);
+        /* Zoomed out */
+    }
 
-  .animated-index-main {
-    transform: translateY(20px);
-  }
+    .animated-index-bg.in {
+        opacity: 1;
+        transform: scale(1);
+        /* Zoom to normal */
+    }
 
-  .animated-index-main.in {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    .animated-index-main {
+        transform: translateY(20px);
+    }
 
-  .animated-index-header {
-    transform: translateY(-30px);
-  }
+    .animated-index-main.in {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
-  .animated-index-header.in {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    .animated-index-header {
+        transform: translateY(-30px);
+    }
 
-  .animated-index-footer {
-    transform: translateY(30px);
-  }
+    .animated-index-header.in {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
-  .animated-index-footer.in {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    .animated-index-footer {
+        transform: translateY(30px);
+    }
+
+    .animated-index-footer.in {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
