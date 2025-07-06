@@ -1,0 +1,104 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sampaikan</title>
+    <link rel="icon" href="asset/img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="asset/css/style.css" />
+</head>
+
+<body>
+
+    <section class="bg-img animated-index-bg">
+        <div class="home-page ">
+
+            <header class="navbar animated-index-header">
+                <nav id="navbar">
+                    <a href="/index.html">
+                        <img src="asset/img/logo.png" alt="Logo" />
+                    </a>
+
+                    <!-- Hamburger hanya tampil di mobile -->
+                    <a href="#" class="hamburger" onclick="toggleMenu()">
+                        <img src="asset/img/icons/Menu.png" alt="menu" />
+                    </a>
+
+                    <div class="topnav" id="nav-links">
+                        <a href="/aboutus.html">About Us</a>
+                        <a href="/ourwork.html">Our Work</a>
+                        <a href="https://linktr.ee/sampaikan">Contact Us</a>
+                    </div>
+                </nav>
+            </header>
+
+            <section class="content">
+                <main class="animated-index-main">
+                    <div class="hero-text">
+                        <h3>WE ARE</h3>
+                        <h1>
+                            CREATIVE <br />
+                            VISUAL TEAM
+                        </h1>
+                        <h4>BASED IN JAKARTA, INDONESIA</h4>
+                    </div>
+                    <div class="hero-description">
+                        <p>
+                            We facilitate every creative element,<br />
+                            who need positive change through <br />
+                            visual experiences.
+                        </p>
+                        <button>View our work</button>
+                    </div>
+                </main>
+
+                <footer class="copyright animated-index-footer">
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=kitasampaikan@gmail.comkitasampaikan@gmail.com"
+                                target="_blank" rel="noopener"><img src="/asset/img/icons/email.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/sampaikan.co/" target="_blank" rel="noopener"><img
+                                    src="/asset/img/icons/instagram.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="http://wa.me/6282210407244" target="_blank" rel="noopener"><img
+                                    src="/asset/img/icons/whatsapp.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" rel="noopener"><img src="/asset/img/icons/youtube.png"
+                                    alt="" /></a>
+                        </li>
+                    </ul>
+                    <div class="footer-text">
+                        <p>&copy; 2023 Sampaikan - All rights reserved.</p>
+                    </div>
+                </footer>
+            </section>
+
+        </div>
+    </section>
+
+
+
+
+    <script src="asset/js/animated.js"></script>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', function (e) {
+            e.preventDefault();
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
