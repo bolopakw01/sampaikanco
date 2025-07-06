@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
+
+/* Layout utama */
+.ourwork-page {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.scroll-header-wrapper {
+    position: fixed;
+    top: 0;
+    max-width: 1440px;
+    width:100%;
+    background-color: #000;
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.scroll-header-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.scroll-header-logo img {
+    width: 150px;
+    height: auto;
+    padding: 10px;
+}
+
+.scroll-header-links {
+    display: flex;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.scroll-header-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family:'Antonio';
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.scroll-header-links a:hover,
+.scroll-header-links a:focus {
+    color: #f84970;
+}
+
+/* Scroll menu kategori */
+.scroll-header-menu {
+    padding: 0 30px 10px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.scroll-header-menu ul {
+    display: flex;
+    gap: 20px;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+.scroll-header-menu ul li {
+    list-style: none;
+}
+
+.scroll-header-menu ul li a {
+    color: #ffffffb3;
+    text-decoration: none;
+    position: relative;
+    padding-left: 20px;
+}
+
+.scroll-header-menu ul li a.active {
+    color: #ffffff;
+}
+
+.scroll-header-menu ul li a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background: #f84970;
+}
+
+.scroll-header-menu::-webkit-scrollbar {
+    display: none;
+}
+
+/* Our Work grid */
+main {
+    padding: 0 32px;
+}
+
+.our-work {
+    padding-top: 300px;
+    display: grid;
+    gap: 72px;
+}
+
+.our-work .title h1 {
+    font-family: 'Antonio', sans-serif;
+    font-size: 88px;
+}
+
+.work-menu {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+}
+
+.work-menu ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.work-menu ul li {
+    list-style: none;
+}
+
+.work-menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffffb3;
+    position: relative;
+    padding: 8px 12px;
+}
+
+.work-menu ul li a.active {
+    color: #ffffff;
+}
+
+.work-menu ul li a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 4px;
+    background: #f84970;
+}
+
+.work-menu::-webkit-scrollbar {
+    display: none;
+}
+
+/* Card grid */
+.card-konten {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+
+.card {
+    width: 100%;
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+    z-index: 1;
+}
+
+.card:hover .card-img {
+    transform: scale(1.1);
+}
+
+.card-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: none;
+    color: #fff;
+    z-index: 2;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.card-text h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.card-text p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+}
+
+/* Filter animation */
+.card.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .card-konten {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+
+    /* Pop-up style for scroll-nav-links */
+    #scroll-nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80vw;
+        max-width: 320px;
+        background: #181818d4;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+        border-radius: 16px;
+        padding: 32px 24px 24px 24px;
+        position: fixed;
+        top: 60px;
+        /* atau sesuaikan tinggi scroll-header-nav */
+        right: 20px;
+        z-index: 2000;
+        animation: popupFadeIn 0.25s;
+    }
+
+    #scroll-nav-links a {
+        padding: 14px 0;
+        font-size: 18px;
+        text-align: left;
+        color: white;
+        width: 100%;
+        border-radius: 8px;
+        transition: background 0.2s;
+    }
+
+    #scroll-nav-links a:hover,
+    #scroll-nav-links a:focus {
+        background: #23232377;
+        color: #f84970;
+    }
+
+    #scroll-nav-links.active {
+        display: flex;
+    }
+
+    main {
+        padding: 0 16px;
+    }
+
+    .our-work {
+        gap: 56px;
+    }
+
+    .our-work .title h1 {
+        font-size: 48px;
+    }
+
+    .card-konten {
+        grid-template-columns: 1fr;
+    }
+}

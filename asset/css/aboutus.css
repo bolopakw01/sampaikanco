@@ -1,0 +1,945 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
+
+/* *{
+   outline: 1px solid red; 
+} */
+
+ .about-us-page{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+.page-about {
+    background-color: #000;
+    color: white;
+    margin: 0;
+    padding: 0 !important;
+    left: 0;
+    right: 0;
+}
+
+.container{
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ========================================
+   STICKY SCROLL HEADER
+======================================== */
+
+.scroll-header-wrapper {
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    max-width: 1440px;
+    width:100%;
+    background-color: #000;
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.scroll-header-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.scroll-header-logo img {
+    width: 150px;
+    height: auto;
+    padding: 10px;
+}
+
+.scroll-header-links {
+    display: flex;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.scroll-header-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family:'Antonio';
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.scroll-header-links a:hover,
+.scroll-header-links a:focus {
+    color: #f84970;
+}
+
+
+/* ========================================
+   ABOUT US SECTION
+======================================== */
+.about-us {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 56px;
+    padding-bottom: 40px;
+    gap:20%;
+}
+
+@media(min-width: 1024px) {
+
+    .titleus{
+        width:100%;
+    }
+}
+
+.titleus {
+    color: white;
+    font-size: 88px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.titleus h1 {
+    font-family: 'Antonio', 'Montserrat', Arial, sans-serif;
+}
+
+
+
+.descriptionus .teks1 {
+    font-size: 20px;
+}
+
+.descriptionus .teks2 {
+    color: #f84970;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+
+/* ========================================
+   GIF SECTION
+======================================== */
+.gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    gap: 48px;
+}
+
+.gif-container img {
+    width: 600px;
+    height: auto;
+    max-width: 100%;
+}
+
+
+/* ========================================
+   OUR CLIENT (DESKTOP GRID VERSION)
+======================================== */
+.aboutus-container {
+    padding-top: 80px;
+    padding-bottom:80px;
+}
+
+.aboutus-title {
+    color: #f84970;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.aboutus-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.aboutus-grid a {
+    text-decoration: none;
+    color: white;
+}
+
+.aboutus-grid div {
+    background-color: #111;
+    border: 1px solid #333;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 18px;
+    transition: background 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+.aboutus-grid div:hover {
+    background-color: #222;
+    transform: scale(1.05);
+}
+
+
+/* ========================================
+   OUR CLIENT (MOBILE CAROUSEL VERSION)
+======================================== */
+.aboutus-carousel {
+    display: none;
+    gap: 0px;
+    flex-direction: column;
+}
+
+.aboutus-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 0px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0px;
+}
+
+.aboutus-track::-webkit-scrollbar {
+    display: none;
+}
+
+.aboutus-track a {
+    flex: 0 0 auto;
+    text-decoration: none;
+}
+
+.aboutus-track a div {
+    background-color: #111;
+    border: 1px solid #333;
+    padding: 32px 24px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    min-width: 140px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.aboutus-track a div:hover {
+    background-color: #222;
+    transform: scale(1.05);
+}
+
+
+/* ========================================
+   OUR SPECIAL SERVICE SECTION
+======================================== */
+.our-special-service {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.our-special-service .title {
+    color: #F84970;
+    padding-bottom: 80px;
+}
+
+.our-special-service .special-service {
+    flex-direction: column;
+    justify-content: flex-start;
+    display: inline-flex;
+    color: white;
+    gap: 30px;
+}
+
+.our-special-service .special-service .service-item {
+    display: flex;
+    gap: 24px;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.service-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    gap:30px;
+}
+
+.our-special-service .special-service .service-item .service-text h2 {
+    color: white;
+    font-size: 44px;
+    font-family: Montserrat;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: left;
+    width: 35%;
+    min-width: 180px;
+    max-width: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    word-break: break-word;
+}
+.our-special-service .special-service .service-item .service-text .flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 100%;
+}
+
+
+.our-special-service .special-service .service-item p {
+    color: white;
+    width: 75%;
+    max-width: 100%;
+    font-size: 22px;
+    font-family: Montserrat;
+    font-weight: 300;
+    line-height: 28px;
+    word-wrap: break-word;
+    padding-right: 80px;
+}
+
+.our-special-service .special-service .service-item button {
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    padding: 6px 18px;
+    font-weight: bold;
+    border-radius: 999px;
+    margin-top: 20px;
+    transition: border 0.2s;
+    font-size: 16px;
+    align-self: flex-start;
+    width: 162px;
+    height: 56px;
+}
+
+.our-special-service .special-service .service-item button:hover {
+    border: 2px solid #f84970;
+}
+
+
+/* ========================================
+   CAROUSEL: THE PROCESS SECTION
+======================================== */
+.the-process {
+    padding-top: 80px;
+    padding-bottom:80px;
+    color: hsl(347, 93%, 63%);
+}
+
+.the-process-title {
+    font-size: 24px;
+    padding-bottom: 40px;
+}
+
+.process-carousel {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    background: #000;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+.process-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.process-track {
+    display: flex;
+    gap: 0;
+    width: max-content;
+    position: relative;
+}
+
+.process-card {
+    position: relative;
+    flex: 0 0 400px;
+    background: #000000;
+    color: white;
+    padding: 50px 28px;
+    display: flex;
+    border-radius: 0;
+    min-height: 1px;
+    box-shadow: inset 0 0 0 1px #222;
+    overflow: visible;
+    transition: background 0.3s;
+}
+
+.icon-text {
+    display: column;
+    gap: 24px;
+    align-items: center;
+}
+.icon-text img{
+    display: block;
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    padding-bottom:16px;
+    transition: filter 0.3s, opacity 0.3s;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    transition: filter 0.3s, opacity 0.3s;
+}
+
+/* Hover effect: icon color changes */
+.process-card:hover .icon,
+.process-card:focus .icon {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(92%) saturate(749%) hue-rotate(320deg) brightness(101%) contrast(101%);
+    opacity: 1;
+}
+
+.text h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.text p {
+    margin: 0;
+    font-size: 15px;
+    color: #aaa;
+    line-height: 1.4;
+}
+
+/* Panah navigasi di kanan tiap card */
+.arrow-right {
+    position: absolute;
+    right: -28px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000000;
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow: 0 0 0 1px #222;
+    pointer-events: none;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    transition: background 0.3s;
+}
+
+.arrow-right img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Sembunyikan panah di card terakhir */
+.process-card:last-child .arrow-right {
+    display: none;
+}
+
+/* Hover: background card dan arrow abu-abu */
+.process-card:hover,
+.process-card:focus {
+    background: #222;
+}
+
+.process-card:hover .arrow-right,
+.process-card:focus .arrow-right {
+    background: #242424;
+}
+
+
+/* ========================================
+   STUDIO SECTION
+======================================== */
+.studio {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    padding-top: 80px;
+}
+
+.studio .title {
+    color: #F84970;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.studio .studio-desc {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 600px;
+}
+
+.studio .studio-desc p {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.maps{
+    padding-bottom:80px;
+}
+
+.maps a img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+/* ========================================
+   CONTACT SECTION
+======================================== */
+.contact {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 32px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.contact .contact-text {
+    color: #F84970;
+    font-family: Montserrat;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.contact .contact-person {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+
+/* ========================================
+   SECTION: SAMPAIKAN
+======================================== */
+.sampaikan {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 260px;
+    padding-bottom:40px;
+}
+
+
+/* ========================================
+   RESPONSIVE: TABLET
+   Max Width: 1024px
+======================================== */
+@media (max-width: 1024px) {
+    .about-us {
+        flex-direction: column;
+        gap: 20px;
+        padding-top : 56px;
+        padding-bottom:40px;
+    }
+
+    .titleus{
+        padding-bottom: 20px
+    }
+
+    .gif-container {
+        padding-top: 40px;
+        gap: 24px;
+    }
+
+    .aboutus-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .our-special-service {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .our-special-service .special-service {
+        width: 100%;
+    }
+
+    .our-special-service .special-service .service-item {
+        flex-direction: flex;
+    }
+
+    .service-text{
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .service-text .flex{
+        padding-left:0px;
+    }
+
+    
+
+    .our-special-service .special-service .service-item .service-text h2 {
+        font-size: 44px;
+        max-width: fit-content;
+        width: 100%;
+    }
+
+    .our-special-service .special-service .service-item p {
+        font-size: 16px;
+        max-width: 650px;
+        width: 100%;
+    }
+
+    .service-item img{
+        width : 221px;
+        height: 221px;
+    }
+
+    
+    .studio .title {
+        font-size: 40px;
+        max-width: 100%;
+        width: 150%;
+    }
+
+    .maps a img {
+        max-width: 950px;
+    }
+
+    .sampaikan {
+        max-width:100%;
+        
+    }
+}
+
+
+/* ========================================
+   RESPONSIVE: MOBILE
+   Max Width: 650px
+======================================== */
+@media (max-width: 650px) {
+
+    .container{
+        padding-left: 16px;
+        padding-right:16px;
+    }
+
+    .about-us{
+        padding-bottom:0px;
+    }
+
+    /* Pop-up style for scroll-nav-links */
+    #scroll-nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80vw;
+        max-width: 320px;
+        background: #181818d4;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+        border-radius: 16px;
+        padding: 32px 24px 24px 24px;
+        position: fixed;
+        top: 60px;
+        /* atau sesuaikan tinggi scroll-header-nav */
+        right: 20px;
+        z-index: 2000;
+        animation: popupFadeIn 0.25s;
+    }
+
+    #scroll-nav-links a {
+        padding: 14px 0;
+        font-size: 18px;
+        text-align: left;
+        color: white;
+        width: 100%;
+        border-radius: 8px;
+        transition: background 0.2s;
+    }
+
+    #scroll-nav-links a:hover,
+    #scroll-nav-links a:focus {
+        background: #23232377;
+        color: #f84970;
+    }
+
+    #scroll-nav-links.active {
+        display: flex;
+    }
+
+    .titleus {
+        font-size: 48px;
+    }
+
+    .descriptionus{
+        padding-right:0px;
+    }
+
+    .descriptionus .teks1{
+        font-size: 16px;
+    }
+
+    .descriptionus .teks2{
+        font-size: 20px;
+    }
+
+    .gif-container{
+        padding-top:56px;
+        padding-bottom:40px;
+        gap:16px;
+    }
+
+    .aboutus-container{
+        padding-top :40px; 
+        padding-bottom: 40px;
+    }
+
+    .aboutus-title {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    .our-special-service {
+        padding-top: 40px;
+        padding-bottom:40px;
+        
+    }
+
+    .our-special-service .special-service {
+        max-width: 100%;
+        width: 100%;
+        gap:32px;
+    }
+
+    .our-special-service .title  {
+        padding-bottom:32px;
+    }
+
+    .our-special-service .title h2 {
+        font-size: 18px;
+    }
+
+    .service-item{
+
+        flex-direction:column-reverse;
+        gap:24px;
+    }
+
+    .service-text .flex{
+        gap:40px;
+    }
+
+    .our-special-service .special-service .service-item .service-text h2 {
+        font-size:32px;
+        max-width: 100%;
+        width: 100%;
+        
+    }
+
+
+    .our-special-service .special-service .service-item .service-text .flex {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .our-special-service .special-service .service-item .service-text .flex p {
+        font-size: 14px;
+        max-width: fit-content;
+        width: 100%;
+    }
+
+    .service-item img {
+        width: auto;
+        height:auto;
+    }
+
+    .the-process{
+        padding-top:40px;
+        padding-bottom:40px;
+    }
+
+    .the-process-title{
+        padding-bottom:24px;
+    }
+
+
+    .aboutus-grid {
+        display: none;
+    }
+
+    .aboutus-carousel {
+        display: block;
+    }
+
+    
+
+    .arrow-right {
+        top: auto;
+        bottom: -24px;
+        right: 12px;
+        left: auto;
+        transform: rotate(90deg);
+    }
+
+    .process-card {
+        flex: 1 1 auto;
+    }
+
+    .process-carousel {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .process-track {
+        flex-direction: column;
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .process-card {
+        display: column;
+    }
+
+
+    .studio {
+        display: grid;
+        justify-content: flex-start;
+        gap: 24px;
+        width: 100%;
+        padding-top:40px;
+        padding-bottom: 24px;
+    }
+
+    .studio .title {
+        font-size: 24px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .studio .studio-desc h2 {
+        font-size: 18px;
+    }
+
+    .studio .studio-desc p {
+        font-size: 14px;
+    }
+
+    .studio .studio .place {
+        padding-top: 32px;
+    }
+
+    .maps{
+        padding-bottom:40px;
+    }
+
+    .maps a img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding-top: 40px;
+        padding-bottom:0px;
+    }
+    .contact .contact-text h2{
+        font-size: 18px;
+    }
+
+    .contact .contact-person {
+        gap:12px;
+    }
+
+    .contact .contact-person p{
+        font-size: 18px;
+    }
+
+
+    .sampaikan {
+        max-width: 100%;
+        width: 100%;
+        left: 50%;
+        right: 50%;
+        padding-top:260px;
+    }
+}
+
+
+
+/* ====== ANIMATED ======= */
+/* Default state: visible (for mobile/tablet) */
+.animated-index-bg,
+.animated-index-main,
+.animated-index-header,
+.animated-index-footer {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+/* Desktop-only animation */
+@media screen and (min-width: 768px) {
+  .animated-index-bg,
+  .animated-index-main,
+  .animated-index-header,
+  .animated-index-footer {
+    opacity: 0;
+    transition: all 1s ease;
+  }
+
+  .animated-index-bg {
+    transform: scale(1.1); /* Zoomed out */
+  }
+
+  .animated-index-bg.in {
+    opacity: 1;
+    transform: scale(1); /* Zoom to normal */
+  }
+
+  .animated-index-main {
+    transform: translateY(20px);
+  }
+
+  .animated-index-main.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .animated-index-header {
+    transform: translateY(-30px);
+  }
+
+  .animated-index-header.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .animated-index-footer {
+    transform: translateY(30px);
+  }
+
+  .animated-index-footer.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
