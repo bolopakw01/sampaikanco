@@ -348,27 +348,33 @@ footer {
     }
 
     .hero-text {
+        font-family: 'Antonio';
         font-size: 32px;
     }
 
     .hero-text h1 {
+        font-family: 'Antonio';
         font-size: 48px;
     }
 
     .hero-text h3 {
+        font-family: 'Antonio';
         font-size: 24px;
     }
 
     .hero-text h4 {
+        font-family: 'Antonio';
         font-size: 20px;
     }
 
     .hero-description p {
         font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .hero-description button {
         font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
     }
 
     footer {
