@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Improved font stack with fallbacks */
+:root {
+  --primary-font: 'Antonio', Arial, sans-serif;
+  --secondary-font: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
+}
 
 /* *{
    outline: 1px solid red; 
@@ -54,6 +60,8 @@
     width: 150px;
     height: auto;
     padding: 10px;
+    -webkit-user-drag: none;
+    user-select: none;
 }
 
 .scroll-header-links {
@@ -66,10 +74,11 @@
     color: #fff;
     padding: 10px 20px;
     font-size: 20px;
-    font-family: 'Antonio';
+    font-family: var(--primary-font);
     font-weight: bold;
     text-transform: uppercase;
     transition: color 0.3s ease;
+    -webkit-font-smoothing: antialiased;
 }
 
 .scroll-header-links a:hover,
@@ -91,7 +100,6 @@
 }
 
 @media(min-width: 1024px) {
-
     .titleus {
         width: 100%;
     }
@@ -102,22 +110,25 @@
     font-size: 88px;
     font-weight: 600;
     text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
 }
 
 .titleus h1 {
-    font-family: 'Antonio', 'Montserrat', Arial, sans-serif;
+    font-family: var(--primary-font);
+    margin: 0;
 }
-
-
 
 .descriptionus .teks1 {
     font-size: 20px;
-
+    font-family: var(--secondary-font);
+    -webkit-font-smoothing: antialiased;
 }
 
 .descriptionus .teks2 {
     color: #f84970;
     font-size: 20px;
+    font-family: var(--secondary-font);
+    -webkit-font-smoothing: antialiased;
 }
 
 
@@ -137,6 +148,7 @@
     width: 600px;
     height: auto;
     max-width: 100%;
+    -webkit-user-drag: none;
 }
 
 
@@ -153,6 +165,8 @@
     margin-bottom: 20px;
     font-size: 24px;
     text-transform: uppercase;
+    font-family: var(--secondary-font);
+    -webkit-font-smoothing: antialiased;
 }
 
 .aboutus-grid {
@@ -176,6 +190,8 @@
     font-size: 18px;
     transition: background 0.3s, transform 0.2s;
     cursor: pointer;
+    font-family: var(--secondary-font);
+    -webkit-font-smoothing: antialiased;
 }
 
 .aboutus-grid div:hover {
@@ -221,6 +237,8 @@
     color: white;
     min-width: 140px;
     transition: background 0.3s, transform 0.2s;
+    font-family: var(--secondary-font);
+    -webkit-font-smoothing: antialiased;
 }
 
 .aboutus-track a div:hover {
@@ -243,6 +261,8 @@
 .our-special-service .title {
     color: #F84970;
     padding-bottom: 80px;
+    font-family: var(--secondary-font);
+    -webkit-font-smoothing: antialiased;
 }
 
 .our-special-service .special-service {
@@ -273,7 +293,7 @@
 .our-special-service .special-service .service-item .service-text h2 {
     color: white;
     font-size: 44px;
-    font-family: Montserrat;
+    font-family: var(--secondary-font);
     font-weight: 400;
     word-wrap: break-word;
     text-align: left;
@@ -283,6 +303,8 @@
     flex-shrink: 0;
     flex-grow: 0;
     word-break: break-word;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
 }
 
 .our-special-service .special-service .service-item .service-text .flex {
@@ -298,11 +320,13 @@
     width: 75%;
     max-width: 100%;
     font-size: 22px;
-    font-family: Montserrat;
+    font-family: var(--secondary-font);
     font-weight: 300;
     line-height: 28px;
     word-wrap: break-word;
     padding-right: 80px;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
 }
 
 .our-special-service .special-service .service-item button {
@@ -319,6 +343,9 @@
     align-self: flex-start;
     width: 162px;
     height: 56px;
+    font-family: var(--secondary-font);
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
 }
 
 .our-special-service .special-service .service-item button:hover {
@@ -338,6 +365,8 @@
 .the-process-title {
     font-size: 24px;
     padding-bottom: 40px;
+    font-family: var(--secondary-font);
+    -webkit-font-smoothing: antialiased;
 }
 
 .process-carousel {
@@ -388,6 +417,7 @@
     object-fit: contain;
     padding-bottom: 16px;
     transition: filter 0.3s, opacity 0.3s;
+    -webkit-user-drag: none;
 }
 
 .icon {
@@ -408,6 +438,8 @@
     margin: 0 0 8px;
     font-size: 20px;
     font-weight: 600;
+    font-family: var(--secondary-font);
+    -webkit-font-smoothing: antialiased;
 }
 
 .text p {
@@ -415,6 +447,8 @@
     font-size: 15px;
     color: #aaa;
     line-height: 1.4;
+    font-family: var(--secondary-font);
+    -webkit-font-smoothing: antialiased;
 }
 
 /* Panah navigasi di kanan tiap card */
@@ -440,6 +474,7 @@
 .arrow-right img {
     width: 20px;
     height: 20px;
+    -webkit-user-drag: none;
 }
 
 /* Sembunyikan panah di card terakhir */
@@ -474,6 +509,9 @@
     color: #F84970;
     font-size: 28px;
     font-weight: 700;
+    font-family: var(--secondary-font);
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
 }
 
 .studio .studio-desc {
@@ -481,11 +519,14 @@
     font-size: 20px;
     font-weight: 400;
     max-width: 600px;
+    font-family: var(--secondary-font);
+    -webkit-font-smoothing: antialiased;
 }
 
 .studio .studio-desc p {
     font-size: 20px;
     padding-top: 10px;
+    margin: 0;
 }
 
 .maps {
@@ -497,6 +538,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    -webkit-user-drag: none;
 }
 
 
@@ -515,9 +557,11 @@
 
 .contact .contact-text {
     color: #F84970;
-    font-family: Montserrat;
+    font-family: var(--secondary-font);
     font-weight: 700;
     word-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
 }
 
 .contact .contact-person {
@@ -526,9 +570,15 @@
     flex-direction: column;
     gap: 12px;
     font-size: 24px;
-    font-family: Montserrat;
+    font-family: var(--secondary-font);
     font-weight: 500;
     word-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+}
+
+.contact .contact-person p {
+    margin: 0;
 }
 
 
@@ -536,7 +586,6 @@
    SECTION: SAMPAIKAN
 ======================================== */
 .sampaikan {
-
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -593,8 +642,6 @@
         padding-left: 0px;
     }
 
-
-
     .our-special-service .special-service .service-item .service-text h2 {
         font-size: 44px;
         max-width: fit-content;
@@ -612,7 +659,6 @@
         height: 221px;
     }
 
-
     .studio .title {
         font-size: 40px;
         max-width: 100%;
@@ -625,7 +671,6 @@
 
     .sampaikan {
         max-width: 100%;
-
     }
 }
 
@@ -635,7 +680,6 @@
    Max Width: 650px
 ======================================== */
 @media (max-width: 650px) {
-
     .container {
         padding-left: 16px;
         padding-right: 16px;
@@ -681,6 +725,8 @@
         width: 100%;
         border-radius: 8px;
         transition: background 0.2s;
+        font-family: var(--primary-font);
+        -webkit-font-smoothing: antialiased;
     }
 
     #scroll-nav-links a:hover,
@@ -728,7 +774,6 @@
     .our-special-service {
         padding-top: 40px;
         padding-bottom: 40px;
-
     }
 
     .our-special-service .special-service {
@@ -746,7 +791,6 @@
     }
 
     .service-item {
-
         flex-direction: column-reverse;
         gap: 24px;
     }
@@ -759,9 +803,7 @@
         font-size: 32px;
         max-width: 100%;
         width: 100%;
-
     }
-
 
     .our-special-service .special-service .service-item .service-text .flex {
         max-width: 100%;
@@ -788,7 +830,6 @@
         padding-bottom: 24px;
     }
 
-
     .aboutus-grid {
         display: none;
     }
@@ -796,8 +837,6 @@
     .aboutus-carousel {
         display: block;
     }
-
-
 
     .arrow-right {
         top: auto;
@@ -825,7 +864,6 @@
     .process-card {
         display: column;
     }
-
 
     .studio {
         display: grid;
@@ -865,7 +903,6 @@
         width: 100%;
     }
 
-
     .contact {
         display: flex;
         flex-direction: column;
@@ -886,7 +923,6 @@
         font-size: 18px;
     }
 
-
     .sampaikan {
         max-width: 100%;
         width: 100%;
@@ -896,7 +932,17 @@
     }
 }
 
-
+/* Animation for popup */
+@keyframes popupFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* ====== ANIMATED ======= */
 /* Default state: visible (for mobile/tablet) */
@@ -911,7 +957,6 @@
 
 /* Desktop-only animation */
 @media screen and (min-width: 768px) {
-
     .animated-index-bg,
     .animated-index-main,
     .animated-index-header,
@@ -922,13 +967,11 @@
 
     .animated-index-bg {
         transform: scale(1.1);
-        /* Zoomed out */
     }
 
     .animated-index-bg.in {
         opacity: 1;
         transform: scale(1);
-        /* Zoom to normal */
     }
 
     .animated-index-main {
